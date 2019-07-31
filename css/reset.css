@@ -1,0 +1,14 @@
+body {
+	background: #212121;
+	font-size: 22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word !important;
+	font-family: 'Open Sans', sans-serif;
+  }
+  img{
+      width: 100%;
+      height: auto;
+  }
