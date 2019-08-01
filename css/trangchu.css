@@ -1,57 +1,86 @@
 /* CSS Document */
 .title {
-  display: flex; }
-  .title h3 {
-    font-size: 15px;
-    margin: 1%; }
-  .title span {
-    font-size: 13px; }
+  background-color: #1e73be; }
+  .title .title-text {
+    display: flex; }
+    .title .title-text h3 {
+      font-size: 16px;
+      margin: 1%;
+      padding-left: 100px; }
+      .title .title-text h3 a {
+        color: #212121;
+        text-decoration: none; }
+      .title .title-text h3 a:hover {
+        color: #05a5f5; }
+    .title .title-text span {
+      font-size: 14px;
+      margin-top: 1%; }
+      .title .title-text span a {
+        color: #212121;
+        text-decoration: none; }
+      .title .title-text span a:hover {
+        color: #05a5f5; }
+    .title .title-text form {
+      width: 50%;
+      padding-left: 50px; }
+      .title .title-text form button {
+        background: #05a5f5;
+        border-radius: 30%; }
+      .title .title-text form button :hover {
+        color: #1e73be; }
+
+.logo {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  width: 60%;
+  height: 50%; }
 
 .menu-main {
   /* Giving a background-color to the nav container. */
   /* Since we'll have the "ul li" "float:left"
-   * we need to add a clear after the container. */
+	 * we need to add a clear after the container. */
   /* Removing padding, margin and "list-style" from the "ul",
-   * and adding "position:reltive" */
+	 * and adding "position:reltive" */
   /* Positioning the navigation items inline */
   /* Styling the links */
   /* Background color change on Hover */
   /* Hide Dropdowns by Default
-   * and giving it a position of absolute */
+	 * and giving it a position of absolute */
   /* Display Dropdowns on Hover */
   /* Fisrt Tier Dropdown */
   /* Second, Third and more Tiers	
-   * We move the 2nd and 3rd etc tier dropdowns to the left
-   * by the amount of the width of the first tier.
-  */
+	 * We move the 2nd and 3rd etc tier dropdowns to the left
+	 * by the amount of the width of the first tier.
+	*/
   /* Change ' +' in order to change the Dropdown symbol */
   /* Media Queries
-  --------------------------------------------- */ }
+	--------------------------------------------- */ }
   .menu-main h1 {
     font-size: 60px;
     text-align: center;
-    color: #FFF; }
+    color: #fff; }
   .menu-main h3 {
     font-size: 30px;
     line-height: 34px;
     text-align: center;
-    color: #FFF; }
+    color: #fff; }
     .menu-main h3 a {
-      color: #FFF; }
+      color: #fff; }
   .menu-main a {
-    color: #FFF; }
+    color: #fff; }
   .menu-main h1 {
     margin-top: 100px;
     text-align: center;
     font-size: 60px;
     line-height: 70px;
-    font-family: 'Bree Serif', 'serif'; }
+    font-family: "Bree Serif", "serif"; }
   .menu-main #container {
     margin: 0 auto;
     max-width: 890px; }
   .menu-main p {
     text-align: center; }
-  .menu-main .toggle, .menu-main [id^=drop] {
+  .menu-main .toggle,
+  .menu-main [id^="drop"] {
     display: none; }
   .menu-main nav {
     margin: 0;
@@ -71,31 +100,33 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
     .menu-main nav ul li {
       margin: 0px;
       display: inline-block;
       float: left;
-      background-color: #254441; }
+      background-color: #1e73be; }
   .menu-main nav a {
     display: table;
     padding: 10px 18px;
-    color: #FFF;
+    color: #fff;
     font-size: 15px;
     text-decoration: none; }
-  .menu-main nav ul li ul li:hover {
-    background: #000000; }
   .menu-main nav a:hover {
-    background-color: #000000; }
+    color: #1e73be; }
+  .menu-main nav ul li ul li:hover {
+    background: #05a5f5; }
+  .menu-main nav a:hover {
+    background-color: #05a5f5; }
   .menu-main nav ul ul {
     display: none;
     position: absolute;
-    /* has to be the same number as the "line-height" of "nav a" */
-    top: 60px; }
+    /* has to be the same number as the "line-height" of "nav a" */ }
   .menu-main nav ul li:hover > ul {
     display: inherit; }
   .menu-main nav ul ul li {
-    width: 170px;
+    width: 225px;
     float: none;
     display: list-item;
     position: relative; }
@@ -105,8 +136,8 @@
     /* has to be the same number as the "width" of "nav ul ul li" */
     left: 170px; }
   .menu-main li > a:only-child:after {
-    content: ''; }
-  @media all and (max-width: 768px) {
+    content: ""; }
+  @media all and (max-width: 1030px) {
     .menu-main {
       /* Hide the navigation menu by default */
       /* Also hide the  */
@@ -124,42 +155,46 @@
         float: none; }
       .menu-main nav {
         margin: 0; }
-      .menu-main .toggle + a, .menu-main .menu {
+      .menu-main .toggle + a,
+      .menu-main .menu {
         display: none; }
       .menu-main .toggle {
         display: block;
-        background-color: #254441;
+        background-color: #1e73be;
         padding: 14px 20px;
-        color: #FFF;
-        font-size: 17px;
+        color: #fff;
+        font-size: 15px;
         text-decoration: none;
         border: none;
-        padding: 0px; }
+        padding: 0px;
+        text-align: center; }
         .menu-main .toggle:hover {
-          background-color: #000000; }
-      .menu-main [id^=drop]:checked + ul {
+          background-color: #05a5f5; }
+      .menu-main [id^="drop"]:checked + ul {
         display: block; }
       .menu-main nav ul li {
         display: block;
         width: 100%; }
-      .menu-main nav ul ul .toggle, .menu-main nav ul ul a {
+      .menu-main nav ul ul .toggle,
+      .menu-main nav ul ul a {
         padding: 0 40px; }
       .menu-main nav ul ul ul a {
         padding: 0 80px; }
-      .menu-main nav a:hover {
-        background-color: #000000; }
       .menu-main nav ul {
         padding-left: 20px; }
         .menu-main nav ul ul ul a {
           background-color: white; }
         .menu-main nav ul li ul li .toggle {
           padding: 14px 20px;
-          color: #FFF;
+          color: #fff;
           font-size: 17px; }
-        .menu-main nav ul ul a, .menu-main nav ul ul ul a {
+        .menu-main nav ul ul a,
+        .menu-main nav ul ul ul a {
           padding: 14px 20px;
-          color: #FFF;
-          font-size: 17px; }
+          color: #fff;
+          font-size: 13px; }
+        .menu-main nav ul ul a:hover {
+          color: #1e73be; }
         .menu-main nav ul li ul li .toggle {
           background-color: #212121; }
         .menu-main nav ul ul {
@@ -167,8 +202,6 @@
           position: static;
           color: #ffffff;
           /* has to be the same number as the "line-height" of "nav a" */ }
-          .menu-main nav ul ul a {
-            background-color: #212121; }
           .menu-main nav ul ul li:hover > ul {
             display: none; }
         .menu-main nav ul li:hover > ul {
@@ -183,5 +216,21 @@
     .menu-main nav ul li {
       display: block;
       width: 94%; } }
+
+@media only screen and (max-width: 600px) {
+  .title .title-text h3 {
+    display: none; }
+  .title .title-text span {
+    font-size: 8px; }
+  .title .title-text form {
+    padding-left: 30px;
+    display: flex; }
+    .title .title-text form input {
+      font-size: 10px;
+      width: 60%;
+      height: 80%; }
+    .title .title-text form button {
+      padding-left: 10px;
+      height: 80%; } }
 
 /*# sourceMappingURL=trangchu.css.map */

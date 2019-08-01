@@ -12,30 +12,40 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
 
+  <!-- font chu open sans -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <!-- style custom -->
+  <link rel="shortcut" href="">
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/trangchu.css">
 </head>
 
 <body>
-
+<!-- start header -->
   <header class="header">
-    <div class="container-fluid">
-      <div class="container title">
+    <div class="container-fluid title">
+      <div class="container title-text  ">
         <h3><a href="http://www.tlu.edu.vn/">Trường Đại học Thủy Lợi </a></h3>
-        <span><a href="#">Login</a> | </span>
-        <span> <a href="#">Register</a> | </span>
-        <span>Ngôn ngữ : 
+        <span><a href="#">Login</a>&emsp;| </span>
+        <span> <a href="#">&emsp;Register</a>&emsp;|</span>
+        <span>&emsp;Ngôn ngữ :
           <select name="lang" id="lang">
             <option value="vn">VN</option>
             <option value="en">EN</option>
           </select>
         </span>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button> <i class="fas fa-search"></i></button>
+        </form>
       </div>
     </div>
-    <div class="container menu-main">  
-      <nav>  
+    <div class="container logo">
+      <a href="#"><img src="images/logo-header.jpg" alt="logo_khoacntt"></a>
+    </div>
+    <div class="container menu-main">
+      <nav>
         <label for="drop" class="toggle"><i class="fas fa-bars"> Menu </i></label>
         <input type="checkbox" id="drop" />
         <ul class="menu">
@@ -44,7 +54,7 @@
           <li><a href="#">Trang chủ</a></li>
 
           <li>
-            <label for="drop-1" class="toggle" ><a href="#12345">Giới thiệu  </a></label>
+            <label for="drop-1" class="toggle"><a href="#12345">Giới thiệu </a></label>
             <a href="#12345">Giới thiệu</a>
             <input type="checkbox" id="drop-1" />
             <ul>
@@ -82,72 +92,82 @@
               <li><a href="#211">Đề cương môn học</a></li>
             </ul>
           </li>
-               <!-- 4 Drop Down -->
-               <li>
-                  <label for="drop-4" class="toggle"><a href="#123">Bộ môn-trung tâm</a></label>
-                  <a href="#123">Bộ môn-trung tâm</a>
-                  <input type="checkbox" id="drop-4" />
-                  <ul>
-                    <li><a href="#122">CN phần mềm</a></li>
-                    <li><a href="#211">Hệ thống thông tin</a></li>
-                    <li><a href="#211">Khoa học máy tính</a></li>
-                    <li><a href="#211">Kỹ thuật máy tính và mạng</a></li>
-                    <li><a href="#211">Toán học</a></li>
-                    <li><a href="#211">Tin học và kỹ thuật tính toán</a></li>
-                    <li><a href="#211">Trung tâm tin học</a></li>
-                  </ul>
-                </li>
-                <!-- 5 Drop Down -->
+          <!-- 4 Drop Down -->
+          <li>
+            <label for="drop-4" class="toggle"><a href="#123">Bộ môn-trung tâm</a></label>
+            <a href="#123">Bộ môn-trung tâm</a>
+            <input type="checkbox" id="drop-4" />
+            <ul>
+              <li><a href="#122">CN phần mềm</a></li>
+              <li><a href="#211">Hệ thống thông tin</a></li>
+              <li><a href="#211">Khoa học máy tính</a></li>
+              <li><a href="#211">Kỹ thuật máy tính và mạng</a></li>
+              <li><a href="#211">Toán học</a></li>
+              <li><a href="#211">Tin học và kỹ thuật tính toán</a></li>
+              <li><a href="#211">Trung tâm tin học</a></li>
+            </ul>
+          </li>
+          <!-- 5 Drop Down -->
 
-                <li>
-                    <label for="drop-5" class="toggle"><a href="#123">Sinh viên</a></label>
-                    <a href="#123">Sinh viên</a>
-                    <input type="checkbox" id="drop-5" />
-                    <ul>
-                      <li><a href="#122">Tài liệu sinh viên</a></li>
-                      <li><a href="#211">Tổ tư vấn học tập</a></li>
-                      <li><a href="#211">Biểu mẫu DATN</a></li>
-                      <li><a href="#211">Luận văn tốt nghiệp</a></li>
-                     
-                    </ul>
-                  </li>
-   <!-- 5 Drop Down -->
+          <li>
+            <label for="drop-5" class="toggle"><a href="#123">Sinh viên</a></label>
+            <a href="#123">Sinh viên</a>
+            <input type="checkbox" id="drop-5" />
+            <ul>
+              <li><a href="#122">Tài liệu sinh viên</a></li>
+              <li><a href="#211">Tổ tư vấn học tập</a></li>
+              <li><a href="#211">Biểu mẫu DATN</a></li>
+              <li><a href="#211">Luận văn tốt nghiệp</a></li>
 
-   <li>
-      <label for="drop-6" class="toggle"><a href="#123">Tin tức</a></label>
-      <a href="#123">Tin tức</a>
-      <input type="checkbox" id="drop-6" />
-      <ul>
-        <li><a href="#122">Sự kiện</a></li>
-        <li><a href="#211">CSE trên báo</a></li>
-      </ul>
-    </li>
+            </ul>
+          </li>
+          <!-- 5 Drop Down -->
 
-       <!-- 6 Drop Down -->
+          <li>
+            <label for="drop-6" class="toggle"><a href="#123">Tin tức</a></label>
+            <a href="#123">Tin tức</a>
+            <input type="checkbox" id="drop-6" />
+            <ul>
+              <li><a href="#122">Sự kiện</a></li>
+              <li><a href="#211">CSE trên báo</a></li>
+            </ul>
+          </li>
 
-   <li>
-      <label for="drop-7" class="toggle"><a href="#123">Thông báo</a></label>
-      <a href="#123">Thông báo</a>
-      <input type="checkbox" id="drop-7" />
-      <ul>
-        <li><a href="#122">Thông báo </a></li>
-        <li><a href="#211">TB đào tạo</a></li>        
-        <li><a href="#211">Nghiên cứu khoa học</a></li>
-        <li><a href="#211">Tuyển dụng </a></li>
-        <li><a href="#211">Học bổng</a></li>
-        <li><a href="#211">Thông báo khác</a></li>
-      </ul>
-    </li>     
-    
-    <!-- 6 Drop Down -->
+          <!-- 6 Drop Down -->
 
-    <li><a href="#123">Liên hệ</a></li>
+          <li>
+            <label for="drop-7" class="toggle"><a href="#123">Thông báo</a></label>
+            <a href="#123">Thông báo</a>
+            <input type="checkbox" id="drop-7" />
+            <ul>
+              <li><a href="#122">Thông báo </a></li>
+              <li><a href="#211">TB đào tạo</a></li>
+              <li><a href="#211">Nghiên cứu khoa học</a></li>
+              <li><a href="#211">Tuyển dụng </a></li>
+              <li><a href="#211">Học bổng</a></li>
+              <li><a href="#211">Thông báo khác</a></li>
+            </ul>
+          </li>
+
+          <!-- 6 Drop Down -->
+
+          <li><a href="#123">Liên hệ</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- end headẻ -->
 
-  <!-- main  -->
+  <!-- start main  -->
+  <main>
+    
+  </main>
+  <!-- end main -->
+
+
+
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="bootstrap/js/jquery.min.js"></script>
